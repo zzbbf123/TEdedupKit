@@ -10,7 +10,7 @@ If overlapping TEs have the same priority level, the longer one will be retained
 ## Usage
 ```bash
 # Duplicate TE
-python TEdedup.py INBED OUTBED --intac-gff Intact.gff3
+python TEdedup.py INBED OUTBED --intact-gff Intact.gff3
 
 # Generate the .out file required for the buildsummary.pl script.
 perl -nle '
@@ -29,7 +29,7 @@ perl buildSummary.pl -maxDiv 40 -genome_size GenomeSize -seq_count SeqNum OUT > 
 
 ## Example
 ```bash
-python TEdedup.py test_data/reclassify.chr1.bed test_data/reclassify.chr1.split.bed --intac-gff test_data/intact.chr1.gff3
+python TEdedup.py test_data/reclassify.chr1.bed test_data/reclassify.chr1.split.bed --intact-gff test_data/intact.chr1.gff3
 
 perl -nle '
     use feature "declared_refs";
