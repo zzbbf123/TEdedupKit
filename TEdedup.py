@@ -73,7 +73,7 @@ class FileWriter:
 
 
 def parse_arguments():
-    usage = "python split_overlap.py INBED OUTBED --"
+    usage = "python split_overlap.py INBED OUTBED --intactgff GFF3"
     parser = argparse.ArgumentParser()
     parser.add_argument(
             'inbed', help='Input BED File. 1-Based.')
